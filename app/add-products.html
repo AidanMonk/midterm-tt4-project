@@ -49,8 +49,31 @@
             </nav>
             <!-- Page content-->
             <div id="content" class="container-fluid p-5">
-                <div class="row" id="card-container">
-                    <!-- Cards will be dynamically inserted here -->
+                <h1 class="mt-4">Add New Product</h1>
+                <div class="mb-3">
+                    <label for="inputProductName" class="form-label">Product Image</label>
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                  </div>
+                <div class="mb-3">
+                    <label for="inputProductTitle" class="form-label">Product Title</label>
+                    <input type="text" class="form-control" id="inputProductTitle" placeholder="Enter product title">
+                </div>
+                <div class="mb-3">
+                    <label for="inputProductDescription" class="form-label">Product Description</label>
+                    <textarea class="form-control" id="inputProductDescription" rows="3"
+                        placeholder="Enter product description (100 characters max)" maxlength="100"></textarea>
+                </div>
+                <label for="inputProductPrice" class="form-label">Product Price</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="number" class="form-control" id="inputProductPrice" placeholder="Enter product price" min="0">
+                </div>
+                <div class="mb-3">
+                    <label for="inputProductQuantity" class="form-label">Product Quantity</label>
+                    <input type="number" class="form-control" id="inputProductQuantity" placeholder="Enter product quantity" min="1">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Add Product</button>
                 </div>
             </div>
         </div>
